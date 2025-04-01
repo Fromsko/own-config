@@ -6,8 +6,8 @@
         "name": "Comments",
         "scope": "comment, punctuation.definition.comment",
         "settings": {
-          "fontStyle": "", // 注释不采用斜体
-          "foreground": "#6eda7c" // 自定义16进制颜色码
+          "fontStyle": "",
+          "foreground": "#6eda7c"
         }
       }
     ]
@@ -20,10 +20,10 @@
     "strings": true
   },
   "editor.tabSize": 4,
-  "editor.fontWeight": "100",
-  "editor.fontFamily": "'Fira Code', Consolas",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code, monospace",
   "editor.minimap.enabled": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.lineNumbers": "on",
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
@@ -47,7 +47,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.linkedEditing": true,
   "editor.suggest.preview": true,
-  "editor.quickSuggestionsDelay": 100,
+  "editor.quickSuggestionsDelay": 50,
   "editor.unicodeHighlight.includeStrings": false,
   // 代码格式化
   "javascript.format.semicolons": "remove",
@@ -78,9 +78,8 @@
   },
   // 窗口设置
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Solarized Dark",
+  "workbench.colorTheme": "Cobalt2",
   "workbench.startupEditor": "none",
-  "workbench.productIconTheme": "emoji-product-icons",
   "workbench.editorAssociations": {
     "*.sbt": "default"
   },
@@ -121,7 +120,9 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [120],
+    "editor.rulers": [
+      120
+    ],
     "editor.suggest.filterGraceful": true,
     "editor.suggest.preview": true,
     "editor.suggest.showClasses": true,
@@ -167,5 +168,7 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "makefile.configureOnOpen": true
 }
